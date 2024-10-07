@@ -4,10 +4,10 @@
  */
 var isValid = function(s) {
     
-        // Create a stack to keep track of opening brackets
+       
         let stack = [];
         
-        // Create a mapping of closing to opening brackets
+        
         const bracketMap = {
             ')': '(',
             ']': '[',
