@@ -18,21 +18,19 @@ var romanToInt = function(s) {
 
  
     for (let i = 0; i < s.length; i++) {
-        // Get the value of the current Roman numeral
         let currentVal = romanMap[s[i]];
-        // Get the value of the next Roman numeral (if exists)
+     
         let nextVal = romanMap[s[i + 1]];
 
-        // If the next value is larger, subtract the current value from the result (subtraction rule)
+       
         if (nextVal && currentVal < nextVal) {
             result -= currentVal;
         } else {
-            // Otherwise, add the current value to the result
+           
             result += currentVal;
         }
     }
-
-    // Return the final integer value
+ 
     return result;
 };
 
