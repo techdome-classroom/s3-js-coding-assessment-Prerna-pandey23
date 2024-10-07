@@ -3,7 +3,7 @@
  * @return {number}
  */
 var romanToInt = function(s) {
-    // Create a map for Roman numerals and their corresponding integer values
+   
     const romanMap = {
         'I': 1,
         'V': 5,
@@ -14,10 +14,9 @@ var romanToInt = function(s) {
         'M': 1000
     };
 
-    // Initialize the result variable to hold the final integer value
     let result = 0;
 
-    // Loop through the string 's'
+ 
     for (let i = 0; i < s.length; i++) {
         // Get the value of the current Roman numeral
         let currentVal = romanMap[s[i]];
